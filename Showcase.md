@@ -1,12 +1,10 @@
-# What is Blubook Modest
+# Blubook Modest
 
-------
+> **Blubook Modest** adapts the original *Blubook* theme to become even more minimal and modest. Major changes are less striking headings and numbering.
 
-> **Blubook** is a minimal and beauty themes for Typora. This theme is good for code and read.
 
-------
 
-## 🌠Features
+## Features
 
 - 👨‍💻‍ Code-Fences fonts use Cascadia Code. This fonts support ligature, when you enter code text same as  '=>'  then will be auto change  one character `=>`
 
