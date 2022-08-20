@@ -1,8 +1,8 @@
-# 📘What is Blubook
+# What is Blubook Modest
 
 ------
 
-**Blubook** is a minimal and beauty themes for Typora. This theme is good for code and read.
+> **Blubook** is a minimal and beauty themes for Typora. This theme is good for code and read.
 
 ------
 

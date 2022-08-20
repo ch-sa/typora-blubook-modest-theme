@@ -73,64 +73,72 @@
 }
 
 #write h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 2;
   margin-top: 14px;
   margin-bottom: 14px;
-}
+  text-align: center;
 
-#write>h1::before {
-  content: 'H1';
-  bottom: 1rem;
+  background: -webkit-linear-gradient(left, #003171, #19B5FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  counter-reset: h2counter;
 }
 
 #write h2 {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   line-height: 2;
   margin-top: 14px;
   margin-bottom: 14px;
+  border-bottom: 1px solid lightgray;
+
+  counter-reset: h3counter;
 }
 
-#write>h2::before {
-  content: 'H2';
-  bottom: .85rem;
+#write h2::before {
+/**  bottom: .85rem; **/
+
+  border-radius: 50%;
+  width: 22px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 14px;
+  color: #ddd;
+  text-align: center;
+
+  content: counter(h2counter);
+  counter-increment: h2counter;
 }
 
 #write h3 {
   font-size: 1.6rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 2;
   font-style: normal;
   margin-top: 14px;
   margin-bottom: 14px;
 }
 
-#write>h3::before {
-  content: 'H3';
-  top: .44rem;
-  padding: 3px 0 3px 0;
+#write h3::before {
+  border-radius: 50%;
+  width: 18px;
+  line-height: 16px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 10px;
+  color: #ddd;
+  text-align: center;
+
+  content: counter(h3counter, upper-alpha);
+  counter-increment: h3counter;
 }
 
 #write h4 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  line-height: 2;
-  font-style: normal;
-  margin-top: 14px;
-  margin-bottom: 14px;
-}
-
-#write>h4::before {
-  content: 'H4';
-  top: .4rem;
-}
-
-#write h5,
-#write h6 {
   font-size: 1.2rem;
   font-weight: 800;
   line-height: 2;
@@ -139,16 +147,36 @@
   margin-bottom: 14px;
 }
 
+#write h4::before {
+  content: 'H4';
+  top: .4rem;
+}
+
+#write h5 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#write h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2;
+  font-style: italic;
+}
+
 #write h5::before,
 #write h6::before {
   top: .2rem;
 }
 
-#write>h5::before {
+#write h5::before {
   content: 'H5';
 }
 
-#write>h6::before {
+#write h6::before {
   content: 'H6';
 }
 
@@ -296,7 +324,8 @@ p {
 
 a {
   /* color: rgb(164, 78, 237); */
-  color: rgb(56, 132, 254);
+  color: #4183C4    ;
+  font-weight: 500;
   text-decoration: none;
   text-decoration-style: none;
   cursor: pointer;
@@ -304,7 +333,6 @@ a {
 }
 
 #write a:hover {
-  color: rgb(56, 132, 254);
   text-decoration: underline;
   text-decoration-style: solid;
 }
