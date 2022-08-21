@@ -215,9 +215,9 @@ body {
 }
 
 hr {
-  border-color: #e6ecf1;
+  border-color: var(--secondary-color);
   height: 2px;
-  border-top: 2px solid #e6ecf1;
+  border-top: 2px solid var(--secondary-color);
 }
 
 img {
