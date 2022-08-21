@@ -17,6 +17,10 @@
   --code-cursor: #f0f0f0;
   --search-select-bg-color: rgba(248, 192, 116, 0.3);
   --search-select-text-color: rgb(59, 69, 78);
+
+  /** Custom colors **/
+  --primary-color: #003171;
+  --secondary-color: #19B5FE;
 }
 
 .md-search-hit.md-search-select{
@@ -33,7 +37,7 @@
 #write {
   position: static;
   width: 90%;
-  max-width: 700px;
+  max-width: 1000px;
   line-height: 1.6;
   transform: none;
   height: auto;
@@ -70,6 +74,7 @@
   float: none;
   padding: 0;
   line-height: 2;
+  top: inherit;
 }
 
 #write h1 {
@@ -81,7 +86,7 @@
   margin-bottom: 14px;
   text-align: center;
 
-  background: -webkit-linear-gradient(left, #003171, #19B5FE);
+  background: -webkit-linear-gradient(left, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -221,9 +226,13 @@ img {
 }
 
 /****** ul ol Style ******/
+ul li::marker {
+  color: var(--secondary-color);
+}
 
 ul>li>ul>li {
   list-style-type: circle;
+  
 }
 
 ul>li>ul>li>ul>li {
