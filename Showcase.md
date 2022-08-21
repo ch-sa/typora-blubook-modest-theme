@@ -17,6 +17,10 @@ The following two headings are prefixed by unobtrusive uppercase letters for `H2
 *Blubook Modest* supports all common forms of enumerations.
 
 1. Like numbered lists.
+   1. b
+      1. b
+         1. d
+
 
 * Or bullet lists.
 

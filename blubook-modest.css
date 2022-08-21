@@ -226,7 +226,7 @@ img {
 }
 
 /****** ul ol Style ******/
-ul li::marker {
+ul li::marker, ol li::marker {
   color: var(--secondary-color);
 }
 
@@ -247,15 +247,15 @@ ul:not(#sidebar-files-menu,#context-menu,.outline-children) {
 }
 
 ol>li {
-  list-style-type: decimal
+  list-style-type: decimal;
 }
 
 ol>li>ol>li {
-  list-style-type: lower-alpha
+  list-style-type: lower-alpha;
 }
 
 ol>li>ol>li>ol>li {
-  list-style-type: lower-roman
+  list-style-type: disc;
 }
 
 @media print {
