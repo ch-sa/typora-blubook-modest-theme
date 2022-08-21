@@ -271,26 +271,25 @@ table {
 }
 
 table tr {
-  border-top: 1px solid #dfe2e5;
+  border-bottom: 1px solid #dfe2e5;
   margin: 0;
   padding: 0;
 }
 
-table tr:nth-child(2n),
 thead {
-  background-color: #f6f9fb;
+  border-top: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  
 }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #dfe2e5;
-  border-bottom: 0;
+  text-align: center;
   margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 1px solid #dfe2e5;
   margin: 0;
   padding: 6px 13px;
 }

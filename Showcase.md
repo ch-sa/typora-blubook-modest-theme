@@ -20,6 +20,13 @@ The following two headings are prefixed by unobtrusive uppercase letters for `H2
 
 * Or bullet lists.
 
+### Tables
+
+| Column A     | Column B     | Column C     |
+| ------------ | ------------ | ------------ |
+| Test Value 1 | Test Value 2 | Test Value 3 |
+| Test Value 3 | Test Value 5 | Test Value 6 |
+
 ### Code
 
 Like with the original theme you get code fences in a nice blue context. Nothing was changed here so far.
@@ -57,12 +64,3 @@ class Utils {
   }
 }
 ```
-
-### Tables
-
-| Column A | Column B | Column C |
-| -------- | -------- | -------- |
-|          |          |          |
-|          |          |          |
-|          |          |          |
-
