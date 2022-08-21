@@ -10,7 +10,7 @@
 
 ### Numbered Headings
 
-The following two headings are prefixed by unobtrusive numbers for `H2` or uppercase letters for `H3`. The former one is supported by horizontal dividers to support splitting up the document into sections.
+The following two headings are prefixed by unobtrusive uppercase letters for `H2` or numbers for `H3`. The former one is supported by horizontal dividers to support splitting up the document into sections.
 
 ### Enumerations & Lists
 
@@ -57,4 +57,12 @@ class Utils {
   }
 }
 ```
+
+### Tables
+
+| Column A | Column B | Column C |
+| -------- | -------- | -------- |
+|          |          |          |
+|          |          |          |
+|          |          |          |
 

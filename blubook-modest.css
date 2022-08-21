@@ -116,7 +116,7 @@
   color: #ddd;
   text-align: center;
 
-  content: counter(h2counter);
+  content: counter(h2counter, upper-alpha);
   counter-increment: h2counter;
 }
 
@@ -139,7 +139,7 @@
   color: #ddd;
   text-align: center;
 
-  content: counter(h3counter, upper-alpha);
+  content: counter(h3counter);
   counter-increment: h3counter;
 }
 
